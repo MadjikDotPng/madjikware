@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('font/text.ttf');
+}
+@font-face {
+    font-family: 'doto';
+    src: url('font/head.ttf');
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'nunito';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    color: #eee;
+}
+
+/*.precard {
+    width: calc(60vw - 40px);
+    height: 0;
+    border-bottom: 40px solid #244681;
+    border-left: 40px solid white;
+    box-shadow:
+    inset 0 0 0 4px #eee;
+}*/
+
+.maincard {
+    height: 10vh;
+    width: 60vw;
+    background: #081347;
+    display: block;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-width: 1px;
+    border-color: #315ceb;
+    border-style: solid;
+}
+
+.maincard > .left > h1 {
+    font-family: 'doto';
+    font-weight: bold;
+    margin-left: 1em;
+    line-height: 5vh;
+}
+
+.content {
+    max-height: 30vh;
+    width: 60vw;
+    margin-top: 2em;
+    background: #081347;
+    display: block;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-width: 1px;
+    border-color: #315ceb;
+    border-style: solid;
+}
+
+.yori {
+    height: 400%;
+    margin-top: -70px;
+}
+
+.left {
+    float: left;
+    width: 70%;
+
+}
+
+.right {
+    float: right;
+    width: 30%;
+}
+
+.toptext {
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 60%;
+    height: 15%;
+    text-wrap: pretty;
+}
+
+.work {
+    
+    margin-left: 2em;
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px
+}
+
+.work > p > a {
+    text-decoration: underline;
+    color: #888;
+    
+}
