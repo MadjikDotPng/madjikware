@@ -17,7 +17,7 @@
                 </div>
                 <div class="content">
                     <div class="toptext">
-                        <p>Your average web developer. I do band websites, alternative clients, webproxy frontends, web designs, web structure, and whatever else I want to do.</p>
+                        <p>I make music and websites online...</p>
                     </div>
 
                     <div class="work">
@@ -34,6 +34,7 @@
         </div>
         <script src="https://unpkg.com/webamp"></script>
         <script>
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             const app = document.getElementById("app")
             const webamp = new Webamp({
                 initialTracks: [
@@ -66,6 +67,10 @@
                 },
                 ],
             });
+
+            if (isMobile) {
+                window.location.replace('/m');
+            }
         </script>
     </body>
 </html>
