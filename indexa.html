@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="precard"></div>
+                <div class="maincard">
+                    <div class="left">
+                        <h1>madjikware.com</h1>
+                    </div>
+                    <div class="right" id="app">
+                        <img src="img/yorifix.png" class="yori">
+                    </div> 
+                </div>
+                <div class="content">
+                    <div class="toptext">
+                        <p>I make music and websites online...</p>
+                    </div>
+
+                    <div class="work">
+                        <!-- <p><a href="https://github.com/MercuryWorkshop/anuraOS">AnuraOS</a> &#12539; <a href="https://github.com/UseInterstellar/Interstellar">Interstellar</a> &#12539; <a href="https://github.com/Lunar-Proxy/Lunar">Lunar</a> &#12539; <a href="https://satellite108.com/">satellite108.com</a> &#12539; <a href="">caspar621.com</a></p>
+                        <p style="font-size: 12px; text-align: center;">On this site:</p> -->
+                        <p style="margin-top: 0;"><a onclick="webamp.renderWhenReady(app);">Music</a> &#12539; <a href="media/">Media</a> &#12539; <a href="https://github.com/MadjikDotPng">Github</a></p>
+                    </div>
+
+                    <div class="footer">
+                    </div>
+                    <script src="https://unpkg.com/webamp"></script>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/webamp"></script>
+        <script>
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const app = document.getElementById("app")
+            const webamp = new Webamp({
+                initialTracks: [
+                {
+                    metaData: {
+                    artist: "majikun",
+                    title: "Twins",
+                    },
+                    // NOTE: Your audio file must be served from the same domain as your HTML
+                    // file, or served with permissive CORS HTTP headers:
+                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                    url: "selfmusic/twins.wav",
+                    duration: 83.4,
+                },
+                {
+                    metaData: {
+                    artist: "majikun",
+                    title: "Recollection",
+                    },
+                    url: "selfmusic/recollection.wav",
+                    duration: 83.4,
+                },
+                {
+                    metaData: {
+                    artist: "majikun",
+                    title: "Helicopter Children",
+                    },
+                    url: "selfmusic/helicopter-children.wav",
+                    duration: 83.4,
+                },
+                ],
+            });
+
+            if (isMobile) {
+                window.location.replace('/m');
+            }
+        </script>
+    </body>
+</html>
