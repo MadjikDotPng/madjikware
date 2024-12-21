@@ -1,1 +1,83 @@
-Under Construction
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>+*. madjikware .*+</title>
+        <meta name="description" content="visit me!">
+        <meta name="author" content="madjikware">
+        <meta name="copyright" content="madjikware">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" type="image/x-icon" href="/img/shion.png">
+    </head>
+    <body>
+        <div class="page" id="all">
+            <center>
+                <!--<div class="titlebox">
+                    <div class="title"><h1>hazels haven</h1></div>
+                </div>-->
+                    
+                <div class="content">
+                    <h1>m a d j i k w a r e</h1>
+                   <div class="bar">
+                    <a href="/">Home</a> <a href="https://github.com/MadjikDotPng">Github</a> <a href="">Music</a> <a href="">Fun</a>
+                   </div>
+
+                   <div class="main">
+                    <div class="left">
+                        <p>
+                            Welcome to the most blue website on the interwebs. My name is Madjik or Madjikware and this is my website ^_^. Most of my projects, my music, links, etc are going to be here. <br><br>If you are coming here from another website, perhaps a sticker or button: welcome! Same applies if you came here from socials or similar. <br><br>If you want to reach out to me, shoot out a Discord friend request to "Madjikware" or email me at madjiktv58@gmail.com. <br><br>There you go! Thats all the reading done! Check out one of the links on this website or <rlx onclick="relax()">Relax</rlx> .
+                        </p>
+                    </div>
+                    <div class="right">
+                        
+                        <img src="/img/shion.png" class="shi">
+                        <!--<br><img src="/img/mj.png" class="ban">
+                        <br><img src="/img/geo.gif" class="ban">
+                        <br><img src="/img/srgb.png" class="ban"> -->
+
+                        <br><a href="https://caspar621.com/">Caspar621</a>
+                        <br><a href="https://nebulaproxy.io/">Nebula Proxy</a>
+                        <br><a href="https://satellite108.com/">Satellite108</a>
+                        <br>
+                        <br><p>&lt;3</p>
+                    </div>
+                   </div>
+                </div>
+                
+            </center>
+        </div>
+        <center>
+            <p id="dis" style="opacity: 0;">Press space to end.</p>
+        </center>
+        <!--<script src="./oneko.js"></script>-->
+        <audio id="myAudio" controls style="opacity: 0; height: 5px;">
+            <source src="img/20.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+        <script>
+            function relax() {
+                document.getElementById('all').style = 'opacity: 0; cursor: none;';
+                document.getElementById('dis').style = 'opacity: 0.50;';
+                var audio = document.getElementById("myAudio");
+                audio.play();
+
+                document.body.onkeyup = function(e) {
+                    if (e.key == " " ||
+                        e.code == "Space" ||      
+                        e.keyCode == 32      
+                    ) {
+                        document.getElementById('all').style = 'opacity: 1; cursor: initial;';
+                        audio.pause();
+                        audio.currentTime = 0;
+                        document.getElementById('dis').style = 'opacity: 0;';
+                    }
+                    }
+            }
+        </script>
+    </body>
+</html>
