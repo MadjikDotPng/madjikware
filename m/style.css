@@ -10,7 +10,7 @@ src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
 
 @font-face {
     font-family: 'main'; /*a name to be used later*/
-    src: url('/PIXEARG_.TTF'); /*URL to font*/
+    src: url('MSGOTHIC.TTF'); /*URL to font*/
 }
 
 .example::-webkit-scrollbar {
@@ -18,7 +18,7 @@ src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
 }
 body {
     background-image: url("../img/gal2.webp");
-    font-family: "MS UI Gothic", Tahoma;
+    font-family: "main";
     ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
