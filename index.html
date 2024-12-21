@@ -60,7 +60,24 @@
           </audio>
           
         <script>
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                    navigator.userAgent
+                );
+                }
+
+                if (isMobileDevice()) {
+                console.log("Mobile device detected");
+                window.location.href = "/m/";
+                } else {
+                console.log("Not a mobile device");
+                }
+
+
             function relax() {
+
+
+        
                 document.getElementById('all').style = 'opacity: 0; cursor: none;';
                 document.getElementById('dis').style = 'opacity: 0.50;';
                 var audio = document.getElementById("myAudio");

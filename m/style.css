@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'head'; /*a name to be used later*/
+    src: url('boxy-bold.ttf'); /*URL to font*/
+}
+
+@font-face {
+font-family: 'Excel';
+src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
+}
+
+@font-face {
+    font-family: 'main'; /*a name to be used later*/
+    src: url('/PIXEARG_.TTF'); /*URL to font*/
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-image: url("../img/gal2.webp");
+    font-family: "MS UI Gothic", Tahoma;
+    ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.page {
+    padding-top: 2vh;
+    transition: 2s;
+}
+
+h1 {
+    font-family: "head";
+    color:#4ADBF1;
+    font-size: 25px;
+}
+
+.content {
+    width: 85vw;
+    min-height: 30em;
+    background: #040B3A;
+    border-style: double;
+    border-color: #4ADBF1;
+}
+
+.bar {
+    height: 30px;
+    margin-top: 20px;
+    width: 89.5%;
+    padding-top: 10px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #4ADBF1;
+}
+
+.bar > a {
+    color: #4ADBF1;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.bar > a:hover {
+    background-color: #4ADBF1;
+    color: #040B3A;
+}
+
+.main {
+    width: 70vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.shi {
+    height: 125px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.right {
+    height: 325px;
+
+    /* width: 175px; */
+    width: 90%;
+}
+
+.left {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #4ADBF1;
+    
+    /* width: 450px; */
+    width: 100%;
+    color:#4ADBF1;
+}
+
+.ban {
+    margin: 2px;
+}
+
+.right > a {
+    color: #4ADBF1;
+    line-height: 1.5;
+}
+
+.right > p{
+    color: #4ADBF1;
+    line-height: 0;
+}
+
+.right > a:hover {
+    background-color: #4ADBF1;
+    color: #040B3A;
+}
+
+.left > p {
+    margin: 25px;
+}
+
+rlx:hover {
+    cursor: pointer;
+    background-color: #4ADBF1;
+    color: #040B3A;
+}
+
+rlx {
+    text-decoration: underline;
+}
+
+#dis {
+    background-color: #4ADBF1;
+    color: #040B3A;
+    width: 200px;
+    transition: 2s;
+}
