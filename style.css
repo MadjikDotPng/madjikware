@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'normal'; /*a name to be used later*/
+    src: url('/arial-pixel.otf'); /*URL to font*/
+}
+
+@font-face {
 font-family: 'Excel';
 src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
 }
@@ -18,7 +23,8 @@ src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
 }
 body {
     background-image: url("/img/gal2.webp");
-    font-family: "MS UI Gothic", Tahoma;
+    font-family: "normal";
+    font-weight:lighter;
     ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
