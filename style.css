@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'cool'; /*a name to be used later*/
+    src: url('/emmitt.otf'); /*URL to font*/
+}
+
+@font-face {
 font-family: 'Excel';
 src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
 }
@@ -18,12 +23,17 @@ src: url(http://metalvalley.neocities.org/dreamytest/Excelorate.woff);
     src: url('/PIXEARG_.TTF'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'alt'; /*a name to be used later*/
+    src: url('/pixel.otf'); /*URL to font*/
+}
+
 .example::-webkit-scrollbar {
     display: none;
 }
 body {
     background-image: url("/img/gal2.webp");
-    font-family: "normal";
+    font-family: "alt";
     font-weight:lighter;
     ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -40,7 +50,8 @@ h1 {
 }
 
 .content {
-    width: 50vw;
+    min-width: 25vw;
+    max-width: 75vw;
     min-height: 30em;
     background: #040B3A;
     border-style: double;
@@ -50,7 +61,7 @@ h1 {
 .bar {
     height: 30px;
     margin-top: 20px;
-    width: 89.5%;
+    width: 86.5%;
     padding-top: 10px;
     border-style: dashed;
     border-width: 1px;
@@ -61,6 +72,7 @@ h1 {
     color: #4ADBF1;
     margin-right: 5px;
     margin-left: 5px;
+    font-family: "cool";
 }
 
 .bar > a:hover {
@@ -69,10 +81,12 @@ h1 {
 }
 
 .main {
-    width: 45vw;
-    height: 325px;
+    min-width: 25vw;
+    max-width: 65vw;
+    height: 350px;
     margin-top: 25px;
     margin-bottom: 25px;
+    
 }
 
 .shi {
@@ -85,7 +99,7 @@ h1 {
     border-style: dashed;
     border-width: 1px;
     border-color: #4ADBF1;
-    height: 325px;
+    height: 350px;
     float: right;
     /* width: 175px; */
     width: 30%;
@@ -95,7 +109,7 @@ h1 {
     border-style: dashed;
     border-width: 1px;
     border-color: #4ADBF1;
-    height: 325px;
+    min-height: 350px;
     float: left;
     /* width: 450px; */
     width: 65%;
@@ -116,10 +130,10 @@ h1 {
     line-height: 0;
 }
 
-.right > a:hover {
+/* .right > a:hover {
     background-color: #4ADBF1;
     color: #040B3A;
-}
+} */
 
 .left > p {
     margin: 25px;
@@ -140,4 +154,16 @@ rlx {
     color: #040B3A;
     width: 200px;
     transition: 2s;
+}
+
+.butt > img {
+    width: 87px;
+    height: 30px;
+    margin: none;
+}
+
+.butt > img:hover {
+    border: 1px solid rgb(0,0,0,0); /* Inner border */
+    outline: 1px solid #4ADBF1; /* Outer outline */
+    outline-offset: 1px; /* Space between border and outline */
 }
